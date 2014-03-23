@@ -13,10 +13,10 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
-import novaclient.auth_plugin
+import troveclient.auth_plugin
 
 
-class RackspaceAuthPlugin(novaclient.auth_plugin.BaseAuthPlugin):
+class RackspaceAuthPlugin(troveclient.auth_plugin.BaseAuthPlugin):
     '''
     The RackspaceAuthPlugin simply provides authenticate, no extra options
     '''

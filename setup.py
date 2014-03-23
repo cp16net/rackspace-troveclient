@@ -37,5 +37,20 @@ setuptools.setup(
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-    ]
+    ],
+    entry_points={
+        "openstack.client.auth_url": [
+            "rackspace_us = rackspace_auth_openstack.plugin:auth_url_us",
+            "rackspace_uk = rackspace_auth_openstack.plugin:auth_url_uk",
+            "rackspace = rackspace_auth_openstack.plugin:auth_url_us"
+        ],
+        "openstack.client.authenticate": [
+            "rackspace_us = rackspace_auth_openstack.plugin:authenticate_us",
+            "rackspace_uk = rackspace_auth_openstack.plugin:authenticate_uk",
+            "rackspace = rackspace_auth_openstack.plugin:authenticate_us"
+        ],
+        "openstack.client.auth_plugin": [
+            "rackspace = rackspace_auth_openstack.plugin:RackspaceAuthPlugin"
+        ]
+    }
 )
