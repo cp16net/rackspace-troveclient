@@ -15,11 +15,6 @@
 import setuptools
 
 
-# troveclient_extensions = [
-#     'rackspace-auth-openstack',                         # RAX-KSKEY
-# ]
-
-
 setuptools.setup(
     name='rackspace-troveclient',
     version='1.0',
@@ -29,7 +24,7 @@ setuptools.setup(
                 'extensions',
     license='Apache License, Version 2.0',
     url='https://github.com/cp16net/rackspace-troveclient',
-    install_requires=['python-troveclient'],  # + troveclient_extensions,
+    install_requires=['python-troveclient'],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
