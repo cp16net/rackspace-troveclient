@@ -1,3 +1,3 @@
-Rackspace Trove Client Metapackage
+Rackspace auth plugin for python-troveclient 
 
 
